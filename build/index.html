@@ -15,17 +15,45 @@
         </h1>
         <div>
           <button
-            id="mobile-open-button"
-            class="text-3xl focus:outline-none sm:hidden"
+            id="hamburger-button"
+            class="cursor-pointer text-3xl md:hidden"
           >
             &#9776;
           </button>
-          <nav class="hidden space-x-8 text-xl sm:block" aria-label="main">
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
             <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
             <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
             <a href="#contact" class="hover:opacity-90">Contact Us</a>
           </nav>
         </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="justify-center absolute top-0 flex w-full flex-col bg-black text-3xl"
+      >
+        <button class="self-end px-6 text-8xl">&times;</button>
+        <nav
+          class="flex-col flex min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full py-6 text-center hover:opacity-90"
+            >Home</a
+          >
+          <a href="#rockets" class="w-full py-6 text-center hover:opacity-90"
+            >Our Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Testionials</a
+          >
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
+            >Contact Us</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
       </section>
     </header>
     <main class="mx-auto max-w-4xl">
